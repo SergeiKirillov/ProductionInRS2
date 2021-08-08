@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProductionInRS2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Формирование отчета по производству рулона" Height="450" Width="800">
     <Grid>
-        
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Name="pathMenu" Orientation="Horizontal">
+                <TextBlock Name="tbStep1" Text="Шаг 1" Width="60" FontSize="20" IsEnabled="True" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="->" Width="25" FontSize="20" FontWeight="ExtraBold"  IsEnabled="True"></TextBlock>
+                <TextBlock Name="tbStep2" Text="Шаг 2" Width="60" FontSize="20" IsEnabled="True" FontWeight="Light"></TextBlock>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Top" Name="infoMenu" Orientation="Horizontal">
+                <TextBlock Name="infoStep"></TextBlock>
+            </StackPanel>
+            <DockPanel Name="stepMenu">
+                
+            </DockPanel>
+        </DockPanel>
+       
+
     </Grid>
 </Window>
