@@ -25,24 +25,24 @@ namespace ProductionInRS2
             InitializeComponent();
 
             
-            tbStep1.ToolTip = "Выберите агрегат";
-            stepMenu.Children.Clear(); //очистка меню
+          //tbStep1.ToolTip = "Выберите агрегат";
+          //stepMenu.Children.Clear(); //очистка меню
 
-            StackPanel stpAgregat = new StackPanel();
-            stpAgregat.Orientation = Orientation.Vertical;
+          //  StackPanel stpAgregat = new StackPanel();
+          //  stpAgregat.Orientation = Orientation.Vertical;
 
-            RadioButton rbStan1700 = new RadioButton();
-            rbStan1700.Content = "Cтан1700";
-            rbStan1700.FontSize = 20;
-            rbStan1700.AddHandler(RadioButton.CheckedEvent, new RoutedEventHandler(Rbtest_Checked));
-            stpAgregat.Children.Add(rbStan1700);
+          //  RadioButton rbStan1700 = new RadioButton();
+          //  rbStan1700.Content = "Cтан1700";
+          //  rbStan1700.FontSize = 20;
+         //   rbStan1700.AddHandler(RadioButton.CheckedEvent, new RoutedEventHandler(Rbtest_Checked));
+         //   stpAgregat.Children.Add(rbStan1700);
 
-            RadioButton rbDsStan = new RadioButton();
-            rbDsStan.Content = "Дрессировочный стан";
-            rbDsStan.FontSize = 20;
-            stpAgregat.Children.Add(rbDsStan);
+          //  RadioButton rbDsStan = new RadioButton();
+          //  rbDsStan.Content = "Дрессировочный стан";
+          //  rbDsStan.FontSize = 20;
+          //  stpAgregat.Children.Add(rbDsStan);
 
-            stepMenu.Children.Add(stpAgregat);
+          //  stepMenu.Children.Add(stpAgregat);
 
         }
 
