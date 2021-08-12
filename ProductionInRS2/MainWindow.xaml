@@ -34,7 +34,7 @@
 
 
         </Grid>
-        <Grid x:Name="step2" Margin="145,10,538.5,298.5">
+        <Grid x:Name="step2" Margin="220.338,10,463.162,298.5">
             <Ellipse x:Name="crcStep1" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
                 <Ellipse.Effect>
                     <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>
@@ -54,7 +54,7 @@
 
 
         </Grid>
-        <Grid x:Name="step3" Margin="280,10,403.5,298.5">
+        <Grid x:Name="step3" Margin="431.499,10,252.001,298.5">
             <Ellipse x:Name="crcStep2" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
                 <Ellipse.Effect>
                     <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>
@@ -74,7 +74,7 @@
 
 
         </Grid>
-        <Grid x:Name="step4" Margin="400,10,283.5,298.5">
+        <Grid x:Name="step4" Margin="671.499,10,12.001,298.5">
             <Ellipse x:Name="crcStep3" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
                 <Ellipse.Effect>
                     <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>

@@ -30,6 +30,7 @@ namespace ProductionInRS2
             step2.Visibility = Visibility.Hidden;
             step3.Visibility = Visibility.Hidden;
             step4.Visibility = Visibility.Hidden;
+            btnBack.Visibility = Visibility.Hidden;
 
 
             //tbStep1.ToolTip = "Выберите агрегат";
@@ -73,6 +74,8 @@ namespace ProductionInRS2
                 step2.Visibility = Visibility.Hidden;
                 step3.Visibility = Visibility.Hidden;
                 step4.Visibility = Visibility.Hidden;
+                btnBack.Visibility = Visibility.Hidden;
+                btnForward.Visibility = Visibility.Visible;
             }
 
             if (StepNumber == 2)
@@ -81,6 +84,8 @@ namespace ProductionInRS2
                 step2.Visibility = Visibility.Visible;
                 step3.Visibility = Visibility.Hidden;
                 step4.Visibility = Visibility.Hidden;
+                btnBack.Visibility = Visibility.Visible;
+                btnForward.Visibility = Visibility.Visible;
             }
 
             if (StepNumber == 3)
@@ -89,6 +94,8 @@ namespace ProductionInRS2
                 step2.Visibility = Visibility.Visible;
                 step3.Visibility = Visibility.Visible;
                 step4.Visibility = Visibility.Hidden;
+                btnBack.Visibility = Visibility.Visible;
+                btnForward.Visibility = Visibility.Visible;
             }
 
             if (StepNumber == 4)
@@ -97,6 +104,8 @@ namespace ProductionInRS2
                 step2.Visibility = Visibility.Visible;
                 step3.Visibility = Visibility.Visible;
                 step4.Visibility = Visibility.Visible;
+                btnBack.Visibility = Visibility.Visible;
+                btnForward.Visibility = Visibility.Hidden;
             }
         }
 
@@ -110,6 +119,8 @@ namespace ProductionInRS2
                 step2.Visibility = Visibility.Hidden;
                 step3.Visibility = Visibility.Hidden;
                 step4.Visibility = Visibility.Hidden;
+                btnBack.Visibility = Visibility.Hidden;
+                btnForward.Visibility = Visibility.Visible;
             }
 
             if (StepNumber == 2)
@@ -118,6 +129,8 @@ namespace ProductionInRS2
                 step2.Visibility = Visibility.Visible;
                 step3.Visibility = Visibility.Hidden;
                 step4.Visibility = Visibility.Hidden;
+                btnBack.Visibility = Visibility.Visible;
+                btnForward.Visibility = Visibility.Visible;
             }
 
             if (StepNumber == 3)
@@ -126,6 +139,8 @@ namespace ProductionInRS2
                 step2.Visibility = Visibility.Visible;
                 step3.Visibility = Visibility.Visible;
                 step4.Visibility = Visibility.Hidden;
+                btnBack.Visibility = Visibility.Visible;
+                btnForward.Visibility = Visibility.Visible;
             }
 
             if (StepNumber == 4)
@@ -134,6 +149,8 @@ namespace ProductionInRS2
                 step2.Visibility = Visibility.Visible;
                 step3.Visibility = Visibility.Visible;
                 step4.Visibility = Visibility.Visible;
+                btnBack.Visibility = Visibility.Visible;
+                btnForward.Visibility = Visibility.Hidden;
             }
         }
     }
