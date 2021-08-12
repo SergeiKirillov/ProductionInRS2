@@ -20,29 +20,36 @@ namespace ProductionInRS2
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int StepNumber;
+
         public MainWindow()
         {
             InitializeComponent();
 
-            
-          //tbStep1.ToolTip = "Выберите агрегат";
-          //stepMenu.Children.Clear(); //очистка меню
+            step1.Visibility = Visibility.Visible;
+            step2.Visibility = Visibility.Hidden;
+            step3.Visibility = Visibility.Hidden;
+            step4.Visibility = Visibility.Hidden;
 
-          //  StackPanel stpAgregat = new StackPanel();
-          //  stpAgregat.Orientation = Orientation.Vertical;
 
-          //  RadioButton rbStan1700 = new RadioButton();
-          //  rbStan1700.Content = "Cтан1700";
-          //  rbStan1700.FontSize = 20;
-         //   rbStan1700.AddHandler(RadioButton.CheckedEvent, new RoutedEventHandler(Rbtest_Checked));
-         //   stpAgregat.Children.Add(rbStan1700);
+            //tbStep1.ToolTip = "Выберите агрегат";
+            //stepMenu.Children.Clear(); //очистка меню
 
-          //  RadioButton rbDsStan = new RadioButton();
-          //  rbDsStan.Content = "Дрессировочный стан";
-          //  rbDsStan.FontSize = 20;
-          //  stpAgregat.Children.Add(rbDsStan);
+            //  StackPanel stpAgregat = new StackPanel();
+            //  stpAgregat.Orientation = Orientation.Vertical;
 
-          //  stepMenu.Children.Add(stpAgregat);
+            //  RadioButton rbStan1700 = new RadioButton();
+            //  rbStan1700.Content = "Cтан1700";
+            //  rbStan1700.FontSize = 20;
+            //   rbStan1700.AddHandler(RadioButton.CheckedEvent, new RoutedEventHandler(Rbtest_Checked));
+            //   stpAgregat.Children.Add(rbStan1700);
+
+            //  RadioButton rbDsStan = new RadioButton();
+            //  rbDsStan.Content = "Дрессировочный стан";
+            //  rbDsStan.FontSize = 20;
+            //  stpAgregat.Children.Add(rbDsStan);
+
+            //  stepMenu.Children.Add(stpAgregat);
 
         }
 
@@ -50,6 +57,84 @@ namespace ProductionInRS2
         private void Rbtest_Checked(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Нажал");
+        }
+
+        private void BtnBack_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            
+            if (StepNumber>1)
+            {
+                StepNumber = StepNumber - 1;
+            }
+
+            if (StepNumber==1)
+            {
+                step1.Visibility = Visibility.Visible;
+                step2.Visibility = Visibility.Hidden;
+                step3.Visibility = Visibility.Hidden;
+                step4.Visibility = Visibility.Hidden;
+            }
+
+            if (StepNumber == 2)
+            {
+                step1.Visibility = Visibility.Visible;
+                step2.Visibility = Visibility.Visible;
+                step3.Visibility = Visibility.Hidden;
+                step4.Visibility = Visibility.Hidden;
+            }
+
+            if (StepNumber == 3)
+            {
+                step1.Visibility = Visibility.Visible;
+                step2.Visibility = Visibility.Visible;
+                step3.Visibility = Visibility.Visible;
+                step4.Visibility = Visibility.Hidden;
+            }
+
+            if (StepNumber == 4)
+            {
+                step1.Visibility = Visibility.Visible;
+                step2.Visibility = Visibility.Visible;
+                step3.Visibility = Visibility.Visible;
+                step4.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void BtnForward_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            StepNumber = StepNumber + 1;
+
+            if (StepNumber == 1)
+            {
+                step1.Visibility = Visibility.Visible;
+                step2.Visibility = Visibility.Hidden;
+                step3.Visibility = Visibility.Hidden;
+                step4.Visibility = Visibility.Hidden;
+            }
+
+            if (StepNumber == 2)
+            {
+                step1.Visibility = Visibility.Visible;
+                step2.Visibility = Visibility.Visible;
+                step3.Visibility = Visibility.Hidden;
+                step4.Visibility = Visibility.Hidden;
+            }
+
+            if (StepNumber == 3)
+            {
+                step1.Visibility = Visibility.Visible;
+                step2.Visibility = Visibility.Visible;
+                step3.Visibility = Visibility.Visible;
+                step4.Visibility = Visibility.Hidden;
+            }
+
+            if (StepNumber == 4)
+            {
+                step1.Visibility = Visibility.Visible;
+                step2.Visibility = Visibility.Visible;
+                step3.Visibility = Visibility.Visible;
+                step4.Visibility = Visibility.Visible;
+            }
         }
     }
 }
