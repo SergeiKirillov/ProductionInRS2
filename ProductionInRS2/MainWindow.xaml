@@ -8,111 +8,134 @@
         mc:Ignorable="d"
         Title="Формирование отчета по производству рулона" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="70"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="115"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="20"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid x:Name="step1"  Height="105" Grid.Column="1" Grid.Row="0">
+                <Ellipse x:Name="crcStep" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
+                    <Ellipse.Effect>
+                        <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>
+                    </Ellipse.Effect>
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
+                            <GradientStop Color="#FF686E6D" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FF95A09E" Offset="0.665"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <ed:Arc ArcThickness="0" ArcThicknessUnit="Pixel" EndAngle="220" HorizontalAlignment="Left" Height="80" Margin="9.5,11.5,0,0" Stretch="None" StrokeThickness="2" StartAngle="320" VerticalAlignment="Top" Width="80" Stroke="#FF014D43"/>
+                <TextBlock HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="40" FontSize="72"/>
+                <TextBlock HorizontalAlignment="Left" Height="34" Margin="22.5,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" TextAlignment="Center" RenderTransformOrigin="0.355,0.495" FontSize="10"><Run Text="Выберите "/><LineBreak/><Run Text="стан"/><LineBreak/><Run/></TextBlock>
+            </Grid>
+            <Grid x:Name="step2"  Grid.Column="2" Grid.Row="0">
+                <Ellipse x:Name="crcStep1" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
+                    <Ellipse.Effect>
+                        <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>
+                    </Ellipse.Effect>
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
+                            <GradientStop Color="#FF686E6D" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FF95A09E" Offset="0.665"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <ed:Arc ArcThickness="0" ArcThicknessUnit="Pixel" EndAngle="220" HorizontalAlignment="Left" Height="80" Margin="9.5,11.5,0,0" Stretch="None" StrokeThickness="2" StartAngle="320" VerticalAlignment="Top" Width="80" Stroke="#FF014D43"/>
+                <TextBlock HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="40" FontSize="72"/>
+                <TextBlock HorizontalAlignment="Left" Height="36" Margin="32.5,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.355,0.495" Text="Выберите &#xA;дату&#xA;" FontSize="10"/>
+            </Grid>
+            <Grid x:Name="step3" Grid.Column="3" Grid.Row="0" >
+                <Ellipse x:Name="crcStep2" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
+                    <Ellipse.Effect>
+                        <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>
+                    </Ellipse.Effect>
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
+                            <GradientStop Color="#FF686E6D" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FF95A09E" Offset="0.665"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <ed:Arc ArcThickness="0" ArcThicknessUnit="Pixel" EndAngle="220" HorizontalAlignment="Left" Height="80" Margin="9.5,11.5,0,0" Stretch="None" StrokeThickness="2" StartAngle="320" VerticalAlignment="Top" Width="80" Stroke="#FF014D43"/>
+                <TextBlock HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="40" FontSize="72"/>
+                <TextBlock HorizontalAlignment="Left" Height="36" Margin="32.5,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.355,0.495" Text="Выберите &#xA;рулон&#xA;" FontSize="10"/>
+            </Grid>
+            <Grid x:Name="step4" Grid.Column="4" Grid.Row="0">
+                <Ellipse x:Name="crcStep3" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
+                    <Ellipse.Effect>
+                        <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>
+                    </Ellipse.Effect>
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
+                            <GradientStop Color="#FF686E6D" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FF95A09E" Offset="0.665"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <ed:Arc ArcThickness="0" ArcThicknessUnit="Pixel" EndAngle="220" HorizontalAlignment="Left" Height="80" Margin="9.5,11.5,0,0" Stretch="None" StrokeThickness="2" StartAngle="320" VerticalAlignment="Top" Width="80" Stroke="#FF014D43"/>
+                <TextBlock HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="40" FontSize="72"/>
+                <TextBlock HorizontalAlignment="Left" Height="36" Margin="32.5,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.355,0.495" Text="Выберите &#xA;параметры&#xA;" FontSize="10"/>
+            </Grid>
+        </Grid>
+        
+        <DockPanel Grid.Column="0" Grid.Row="1">
+            <ed:BlockArrow x:Name="btnBack" Height="79.5" Width="65" Orientation="Left" StrokeThickness="2" HorizontalAlignment="Left" VerticalAlignment="Center"   MouseLeftButtonDown="BtnBack_MouseLeftButtonDown">
+                <ed:BlockArrow.Fill>
+                    <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
+                        <GradientStop Color="#FF13F5D0" Offset="0.991"/>
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#FF99A095" Offset="0.335"/>
+                    </LinearGradientBrush>
+                </ed:BlockArrow.Fill>
+            </ed:BlockArrow>
+        </DockPanel>
+        <DockPanel Grid.Column="2" Grid.Row="1">
+            <ed:BlockArrow x:Name="btnForward"  Height="79.5" Width="62" Orientation="Right" StrokeThickness="2" HorizontalAlignment="Right"  VerticalAlignment="Center"   MouseLeftButtonDown="BtnForward_MouseLeftButtonDown" MouseLeftButtonUp="BtnForward_MouseLeftButtonUp">
+                <ed:BlockArrow.Fill>
+                    <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
+                        <GradientStop Color="#FF22F3D0" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FF95A09E" Offset="0.665"/>
+                    </LinearGradientBrush>
+                </ed:BlockArrow.Fill>
+            </ed:BlockArrow>
+        </DockPanel>
+        
+
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.506,0.995" StartPoint="0.504,0.006">
                 <GradientStop Color="#FFF7EEB0" Offset="0"/>
                 <GradientStop Color="White" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Grid x:Name="step1" Margin="10,10,673.5,298.5">
-            <Ellipse x:Name="crcStep" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
-                <Ellipse.Effect>
-                    <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>
-                </Ellipse.Effect>
-                <Ellipse.Fill>
-                    <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
-                        <GradientStop Color="#FF686E6D" Offset="0"/>
-                        <GradientStop Color="White" Offset="1"/>
-                        <GradientStop Color="#FF95A09E" Offset="0.665"/>
-                    </LinearGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-            <ed:Arc ArcThickness="0" ArcThicknessUnit="Pixel" EndAngle="220" HorizontalAlignment="Left" Height="80" Margin="9.5,11.5,0,0" Stretch="None" StrokeThickness="2" StartAngle="320" VerticalAlignment="Top" Width="80" Stroke="#FF014D43"/>
-            <TextBlock HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="40" FontSize="72"/>
-            <TextBlock HorizontalAlignment="Left" Height="34" Margin="22.5,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" TextAlignment="Center" RenderTransformOrigin="0.355,0.495" FontSize="10"><Run Text="Выберите "/><LineBreak/><Run Text="стан"/><LineBreak/><Run/></TextBlock>
+        
 
 
-
-        </Grid>
-        <Grid x:Name="step2" Margin="220.338,10,463.162,298.5">
-            <Ellipse x:Name="crcStep1" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
-                <Ellipse.Effect>
-                    <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>
-                </Ellipse.Effect>
-                <Ellipse.Fill>
-                    <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
-                        <GradientStop Color="#FF686E6D" Offset="0"/>
-                        <GradientStop Color="White" Offset="1"/>
-                        <GradientStop Color="#FF95A09E" Offset="0.665"/>
-                    </LinearGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-            <ed:Arc ArcThickness="0" ArcThicknessUnit="Pixel" EndAngle="220" HorizontalAlignment="Left" Height="80" Margin="9.5,11.5,0,0" Stretch="None" StrokeThickness="2" StartAngle="320" VerticalAlignment="Top" Width="80" Stroke="#FF014D43"/>
-            <TextBlock HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="40" FontSize="72"/>
-            <TextBlock HorizontalAlignment="Left" Height="36" Margin="32.5,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.355,0.495" Text="Выберите &#xD;&#xA;дату&#xD;&#xA;" FontSize="10"/>
-
-
-
-        </Grid>
-        <Grid x:Name="step3" Margin="431.499,10,252.001,298.5">
-            <Ellipse x:Name="crcStep2" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
-                <Ellipse.Effect>
-                    <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>
-                </Ellipse.Effect>
-                <Ellipse.Fill>
-                    <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
-                        <GradientStop Color="#FF686E6D" Offset="0"/>
-                        <GradientStop Color="White" Offset="1"/>
-                        <GradientStop Color="#FF95A09E" Offset="0.665"/>
-                    </LinearGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-            <ed:Arc ArcThickness="0" ArcThicknessUnit="Pixel" EndAngle="220" HorizontalAlignment="Left" Height="80" Margin="9.5,11.5,0,0" Stretch="None" StrokeThickness="2" StartAngle="320" VerticalAlignment="Top" Width="80" Stroke="#FF014D43"/>
-            <TextBlock HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="40" FontSize="72"/>
-            <TextBlock HorizontalAlignment="Left" Height="36" Margin="32.5,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.355,0.495" Text="Выберите &#xA;рулон&#xA;" FontSize="10"/>
-
-
-
-        </Grid>
-        <Grid x:Name="step4" Margin="671.499,10,12.001,298.5">
-            <Ellipse x:Name="crcStep3" HorizontalAlignment="Left" Height="80" Margin="8.5,11.5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="80">
-                <Ellipse.Effect>
-                    <DropShadowEffect ShadowDepth="15" BlurRadius="10"/>
-                </Ellipse.Effect>
-                <Ellipse.Fill>
-                    <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
-                        <GradientStop Color="#FF686E6D" Offset="0"/>
-                        <GradientStop Color="White" Offset="1"/>
-                        <GradientStop Color="#FF95A09E" Offset="0.665"/>
-                    </LinearGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-            <ed:Arc ArcThickness="0" ArcThicknessUnit="Pixel" EndAngle="220" HorizontalAlignment="Left" Height="80" Margin="9.5,11.5,0,0" Stretch="None" StrokeThickness="2" StartAngle="320" VerticalAlignment="Top" Width="80" Stroke="#FF014D43"/>
-            <TextBlock HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="40" FontSize="72"/>
-            <TextBlock HorizontalAlignment="Left" Height="36" Margin="32.5,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.355,0.495" Text="Выберите &#xA;параметры&#xA;" FontSize="10"/>
-
-
-
-        </Grid>
-        <ed:BlockArrow x:Name="btnForward" HorizontalAlignment="Left" Height="79.5" Margin="720,240,0,0" Orientation="Right" StrokeThickness="2" VerticalAlignment="Top" Width="62" MouseLeftButtonDown="BtnForward_MouseLeftButtonDown">
-            <ed:BlockArrow.Fill>
-                <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
-                    <GradientStop Color="#FF22F3D0" Offset="0"/>
-                    <GradientStop Color="White" Offset="1"/>
-                    <GradientStop Color="#FF95A09E" Offset="0.665"/>
-                </LinearGradientBrush>
-            </ed:BlockArrow.Fill>
-        </ed:BlockArrow>
-        <ed:BlockArrow x:Name="btnBack" HorizontalAlignment="Left" Height="79.5" Margin="10,240,0,0" Orientation="Left" StrokeThickness="2" VerticalAlignment="Top" Width="65" MouseLeftButtonDown="BtnBack_MouseLeftButtonDown">
-            <ed:BlockArrow.Fill>
-                <LinearGradientBrush EndPoint="-0.012,0.5" StartPoint="0.988,0.5">
-                    <GradientStop Color="#FF13F5D0" Offset="0.991"/>
-                    <GradientStop Color="White"/>
-                    <GradientStop Color="#FF99A095" Offset="0.335"/>
-                </LinearGradientBrush>
-            </ed:BlockArrow.Fill>
-        </ed:BlockArrow>
-
+        
+      
+        
 
 
     </Grid>

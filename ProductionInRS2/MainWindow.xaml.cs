@@ -63,12 +63,12 @@ namespace ProductionInRS2
         private void BtnBack_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             
-            if (StepNumber>1)
+            if (StepNumber>0)
             {
                 StepNumber = StepNumber - 1;
             }
 
-            if (StepNumber==1)
+            if (StepNumber==0)
             {
                 step1.Visibility = Visibility.Visible;
                 step2.Visibility = Visibility.Hidden;
@@ -78,7 +78,7 @@ namespace ProductionInRS2
                 btnForward.Visibility = Visibility.Visible;
             }
 
-            if (StepNumber == 2)
+            if (StepNumber == 1)
             {
                 step1.Visibility = Visibility.Visible;
                 step2.Visibility = Visibility.Visible;
@@ -88,7 +88,7 @@ namespace ProductionInRS2
                 btnForward.Visibility = Visibility.Visible;
             }
 
-            if (StepNumber == 3)
+            if (StepNumber == 2)
             {
                 step1.Visibility = Visibility.Visible;
                 step2.Visibility = Visibility.Visible;
@@ -98,7 +98,7 @@ namespace ProductionInRS2
                 btnForward.Visibility = Visibility.Visible;
             }
 
-            if (StepNumber == 4)
+            if (StepNumber == 3)
             {
                 step1.Visibility = Visibility.Visible;
                 step2.Visibility = Visibility.Visible;
@@ -113,7 +113,7 @@ namespace ProductionInRS2
         {
             StepNumber = StepNumber + 1;
 
-            if (StepNumber == 1)
+            if (StepNumber == 0)
             {
                 step1.Visibility = Visibility.Visible;
                 step2.Visibility = Visibility.Hidden;
@@ -123,11 +123,21 @@ namespace ProductionInRS2
                 btnForward.Visibility = Visibility.Visible;
             }
 
-            if (StepNumber == 2)
+            if (StepNumber == 1)
             {
                 step1.Visibility = Visibility.Visible;
                 step2.Visibility = Visibility.Visible;
                 step3.Visibility = Visibility.Hidden;
+                step4.Visibility = Visibility.Hidden;
+                btnBack.Visibility = Visibility.Visible;
+                btnForward.Visibility = Visibility.Visible;
+            }
+
+            if (StepNumber == 2)
+            {
+                step1.Visibility = Visibility.Visible;
+                step2.Visibility = Visibility.Visible;
+                step3.Visibility = Visibility.Visible;
                 step4.Visibility = Visibility.Hidden;
                 btnBack.Visibility = Visibility.Visible;
                 btnForward.Visibility = Visibility.Visible;
@@ -138,20 +148,17 @@ namespace ProductionInRS2
                 step1.Visibility = Visibility.Visible;
                 step2.Visibility = Visibility.Visible;
                 step3.Visibility = Visibility.Visible;
-                step4.Visibility = Visibility.Hidden;
-                btnBack.Visibility = Visibility.Visible;
-                btnForward.Visibility = Visibility.Visible;
-            }
-
-            if (StepNumber == 4)
-            {
-                step1.Visibility = Visibility.Visible;
-                step2.Visibility = Visibility.Visible;
-                step3.Visibility = Visibility.Visible;
                 step4.Visibility = Visibility.Visible;
                 btnBack.Visibility = Visibility.Visible;
                 btnForward.Visibility = Visibility.Hidden;
             }
+            //Cursor = Cursors.Arrow;
+
+        }
+
+        private void BtnForward_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            //Cursor = Cursors.Wait;
         }
     }
 }
